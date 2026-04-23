@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_license_detect
+
+import std::io
+use ltl_license_detect as lib
+
+fn main() {
+    io::println("ltl_license_detect demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
